@@ -1,0 +1,28 @@
+
+public class Palindrom {
+
+    public static void checkPalindrom(int n) {
+        int rev = 0;
+        int ld;
+        int temp = n;
+        while (n > 0) {
+            ld = n % 10;
+            rev = (rev * 10) + ld;
+            n = n / 10;
+
+        }
+        if (temp == rev) {
+            System.out.println("Palindrom");
+        } else {
+            System.out.println("Not palindrom");
+        }
+
+    }
+
+    public static void main(String args[]) {
+
+        checkPalindrom(126);// change number here to check palindrom or not 
+
+    }
+
+}
